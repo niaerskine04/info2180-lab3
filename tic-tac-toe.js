@@ -19,6 +19,12 @@ function squareEventListeners() {
     square.addEventListener('click', function() {
       handleSquareClick(square, index);
     });
+    square.addEventListener('mouseover', function() {
+      square.classList.add('hover');
+    });
+    square.addEventListener('mouseout', function() {
+      square.classList.remove('hover');
+    });
   });
 }
 
